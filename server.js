@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 
-// import the dinosaur router and flaor router here
+// import the dinosaur router and flavor router here
 
 
 app.use(bodyParser.json());
