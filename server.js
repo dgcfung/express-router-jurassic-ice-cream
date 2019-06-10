@@ -1,9 +1,11 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-
-const app = express()
+const app = express();
 
 // import the router here
+
+
+app.use(bodyParser.json());
 
 
 // wrtie error handling app.use that sends logs error stack and status 500
@@ -13,6 +15,6 @@ const app = express()
 
 
 
-app.listen(3000, () => {
-    console.log(`running on port 3000!`)
+app.listen(4567, () => {
+    console.log(`running on port 4567!`)
 })

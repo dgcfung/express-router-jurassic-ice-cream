@@ -7,7 +7,6 @@ const { Dinosaur, Flavor } = require('../models');
 // Create a route that displays all dinos
 
 
-
 // Create a route that displays all flavors
 
 
