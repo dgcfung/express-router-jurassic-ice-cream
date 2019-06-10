@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 // set dinosaur router under '/dinos'
 
 
-// set icecream router under '/flavors'
+// set flavor router under '/flavors'
 
 
 app.listen(4567, () => {
