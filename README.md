@@ -8,6 +8,6 @@ For this homework, we will build a small Express app in our server.js file. Once
 - Fork and clone this repo
 - Run `npm install`
 - Your models and seed have been created for you so run `npm run db:init` and `npm run db:model` and `npm run db:seed` to set up your database 
-- Follow the instructions inside of `routes/dinoIcecream.js` and `server.js`
+- Follow the instructions inside of `routes/dinosaur.js`, `routes/flavor.js` and `server.js`
 
 
