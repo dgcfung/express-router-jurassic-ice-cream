@@ -7,7 +7,22 @@ For this homework, we will build a small Express app in our server.js file. Once
 ## Set Up
 - Fork and clone this repo
 - Run `npm install`
-- Your models and seed have been created for you so run `npm run db:init` and `npm run db:model` and `npm run db:seed` to set up your database 
+- Set up your database
+    - `npx sequelize-cli init`
+    - change your config file to reference PSQL
+    - Create Your Postgres DB
+        - `npx sequelize-cli db:create`
+    - Create your models: You will need 2 models: Dinosaur and Flavor
+        - `npx sequelize-cli model:generate`
+        - Dinosaur should have a name(text), height(integer), and period(string)
+        - Flavor should have name(string), color(string), on_sale(boolean)
+    - Execute your migrations
+        - `npx sequelize-cli db:migrate`
+    - Create your seed file
+        - `npx sequelize-cli seed:generate`
+        - There is sample seed data in `seed.js`
+    - Execute your seed file
+        - `npx sequelize-cli db:seed:all`
 - Follow the instructions inside of `routes/dinosaur.js`, `routes/flavor.js` and `server.js`
 
 

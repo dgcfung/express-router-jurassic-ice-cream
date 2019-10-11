@@ -1,49 +1,37 @@
-const { Dinosaur, Flavor } = require('./models')
+{
+  {
+    "name": "rex",
+    "height": 10000,
+    "period": "jurassic"
+  },
 
-const main = async () => {
-    
-    await Dinosaur.destroy({ where: {} })
-    await Flavor.destroy({ where: {} })
+  {
+    "name": "stegosaurus",
+    "height": 1000,
+    "period": "cretaceous"
+  },
 
-    // Create Dinosaurs
-    await Dinosaur.create({
-        name: 'rex',
-        height: 10000,
-        period: 'jurassic'
-    })
+  {
+    "name": "barney",
+    "height": 6,
+    "period": "daycare"
+  },
 
-    await Dinosaur.create({
-        name: 'stegosaurus',
-        height: 1000,
-        period: 'cretaceous'
-    })
+{
+    "name": "chocolate",
+    "color": "brown",
+    "on_sale": true,
+  },
 
-    await Dinosaur.create({
-        name: 'barney',
-        height: 6,
-        period: 'daycare'
-    })
+{
+    "name": "strawberry",
+    "color": "pink",
+    "on_sale": true,
+  },
 
-    // Create Flavors
-    await Flavor.create({
-        name: 'chocolate',
-        color: 'brown',
-        on_sale: true,
-    })
-
-    await Flavor.create({
-        name: 'strawberry',
-        color: 'pink',
-        on_sale: true,
-    })
-
-    await Flavor.create({
-        name: 'lemon',
-        color: 'white',
-        on_sale: false,
-    })
-    
+{
+    "name": "lemon",
+    "color": "white",
+    "on_sale": false,
+  },
 }
-
-main()
-// process.exit()

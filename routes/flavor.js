@@ -1,8 +1,7 @@
 const express = require('express');
 
 const flavorRouter = express.Router();
-const { Flavor } = require('../models');
-
+// Import your Flavor Model
 
 // Create a route that displays all flavors
 

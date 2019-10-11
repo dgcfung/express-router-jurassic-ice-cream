@@ -1,8 +1,7 @@
 const express = require('express');
 
 const dinosaurRouter = express.Router();
-const { Dinosaur } = require('../models');
-
+// Import your Dinosaur Model
 
 // Create a route that displays all dinos
 
