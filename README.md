@@ -29,10 +29,9 @@ For this homework, we will build a small Express app in our server.js file. Once
     - create a route that displays all instances of the model
     - create a route that displays a instance of the model by id
     - create a route that displays an instance of the model by name
-- Inside `server.js` you will need to:
-    - import both dinosaur and flavor routes
-    - create error handling with `app.use`
-    - create the paths for your routes
+
+## Testing
+- Turn your server on and make sure your routes are working!
 
 ## Submission
 Pull requests for both complete and incomplete homework are due by **11PM**
