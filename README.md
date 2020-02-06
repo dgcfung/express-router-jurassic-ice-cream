@@ -19,6 +19,20 @@ For this homework, we will build a small Express app in our server.js file. Once
 - Create your seed file with `npx sequelize-cli seed:generate`
     - There is sample seed data in `seed.js`
 - Execute your seed file with `npx sequelize-cli db:seed:all`
-        
-        
+
+## Create Your Routes
+
 - Follow the instructions inside of `routes/dinosaur.js`, `routes/flavor.js` and `server.js`
+- Look inside the `routes` directory to find a routing file for each model, `dinosaur.js` and `flavor.js`
+- For each file you will need to:
+    - import the model
+    - create a route that displays all instances of the model
+    - create a route that displays a instance of the model by id
+    - create a route that displays an instance of the model by name
+- Inside `server.js` you will need to:
+    - import both dinosaur and flavor routes
+    - create error handling with `app.use`
+    - create the paths for your routes
+
+## Submission
+Pull requests for both complete and incomplete homework are due by **11PM**
