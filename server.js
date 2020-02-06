@@ -1,21 +1,18 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-
-// import the dinosaur router and flavor router here
-
+const dinosaurs = require('./routes/dinosaur')
+const flavors = require('./routes/flavor')
 
 app.use(bodyParser.json());
 
+app.use(function (err, req, res, next) {
+  console.error(err.stack)
+  res.status(500).send('Something broke!')
+})
 
-// wrtie error handling app.use that sends logs error stack and status 500
-
-
-// set dinosaur router under '/dinos'
-
-
-// set flavor router under '/flavors'
-
+app.use('/dinosaurs', dinosaurs)
+app.use('/flavors', flavors)
 
 app.listen(4567, () => {
     console.log(`running on port 4567!`)
